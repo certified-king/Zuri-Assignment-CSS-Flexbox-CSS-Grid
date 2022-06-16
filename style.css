@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Poppins:wght@300;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsla(179, 100%, 13%);
+    --transparent-white: hsl(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%); 
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    height: 100vh;
+}
+
+nav{
+    padding: 5px;
+    margin: 5px;
+}
+
+a{
+    background-color: var(--bright-orange);
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--transparent-white);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sedan{
+    width: 25%;
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suv{
+    width: 25%;
+    background-color: var(--dark-cyan);
+}
+
+.luxury{
+    width: 25%;
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+p{
+    color: var(--transparent-white);
+    margin: 20px 60px;
+    font-family: 'Lexend Deca';
+}
+
+h1{
+    color: var(--very-light-gray);
+    margin: 40px 60px;
+    font-family: 'Big Shoulders Display';
+}
+
+img{
+    margin: 40px 0 0 60px;
+}
+
+button{
+    background-color: var(--very-light-gray);
+    border: none;
+    margin: 60px 0 40px 60px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-family: 'Lexend Deca';
+    cursor: pointer;
+}
+
+.sedan button{
+    color: var(--bright-orange);
+}
+
+.suv button{
+    color: var(--dark-cyan);
+}
+
+.luxury button{
+    color: var(--very-dark-cyan);
+}
+
+
+@media (max-width: 375px) {
+    .container{
+        display: inline-block;
+    }
+
+    .sedan, .suv, .luxury{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
